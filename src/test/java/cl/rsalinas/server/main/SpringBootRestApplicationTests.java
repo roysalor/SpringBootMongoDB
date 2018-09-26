@@ -1,4 +1,4 @@
-package com.bhaiti.server.main;
+package cl.rsalinas.server.main;
 //This is a auto generated test class
 import org.junit.Test;
 import org.junit.runner.RunWith;
