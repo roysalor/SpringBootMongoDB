@@ -19,13 +19,15 @@ public class DiscoController {
 	@Autowired
 	private DiscoRepository repository;
 
-
+    //http://localhost:8083/disco/all
     @GetMapping("/disco/all")
     @ResponseBody
     public List<Disco> getAllDiscos() {
 	    return repository.findAll();
 	  }
     
+    
+    //http://localhost:8083/disco/name?name=5babf44bd99f116e4b945f0d
     @GetMapping("/disco/name")
     @ResponseBody
     public Disco getDiscoName(@RequestParam(name="name", required=false, defaultValue="5babeb7bd99f116e4b945efc") ObjectId name) {
